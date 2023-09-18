@@ -14,6 +14,7 @@ main{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+   
 }
 
 section{
@@ -205,36 +206,54 @@ div.butt.butt-end:hover{
    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-  @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
+
+ *{
+      margin: 0;
+      padding: 0;
+  }
+  
+  body{
+      width: 100%;
+      height: 100%;
+      background-color:hsl(0, 0%, 100%);
+  }
+  
+  main{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: inherit;
+     width: inherit;    
+  }
+
    section{
-      display: grid;
-      place-items: center;
-      grid-template-columns: 1fr;
-      border-radius: 20px;
-      box-shadow: none;
-      background-color: hsl(0, 0%, 100%);
-      font-size: 18px;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   border-radius: 20px;
+   box-shadow: none;
+   background-color: hsl(0, 0%, 100%);
+   font-size: 18px;
+   width: inherit;
+   height: inherit;
   }
 
   /* Left side */
-.left{
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   flex-direction: column;
-   width: 380px;
-   height: 365px;
-   background: linear-gradient(hsl(252, 100%, 65%), hsl(241, 81%, 55%));
-   border-radius: 20px;
-   color:aliceblue;
+   .left{
+   width: inherit;
+   height: 40%;
+   border-radius: 0 0 30px 30px;
 }
 /* Right side */
-.right{
+   .right{
    display: flex;
+   align-content: stretch;
    justify-content: space-evenly;
    flex-direction: column;
-   width: 380px;
-   height: 365px;
+   width: 100%;
+   height: 60%;
  }
 
  .end-text{
@@ -242,27 +261,9 @@ div.butt.butt-end:hover{
    font-size: 11px;
    color: hsl(246, 100%, 82%);
  }
-   /*
-    .qr{
-        width: 280px;
-        height: 280px;
-        padding: 5px; 
-     }
 
-     p{
-        width: 250px;
-     }
+ article.right div {
+   margin: 0 20px 0 20px;
+}
 
-     .first{
-        font-size: 1.3rem;
-        
-     }
-     
-     .second{
-        font-size: 0.9rem;
-     }
-
-     .text{
-        row-gap: 15px;
-     }*/
  } 
