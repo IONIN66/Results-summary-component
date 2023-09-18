@@ -199,7 +199,6 @@ div.butt.butt-end{
    color: white;
    border-radius: 25px;
    height: 35px;
-   transition: 5s;
 }
 
 div.butt.butt-end:hover{
