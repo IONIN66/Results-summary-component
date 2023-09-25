@@ -206,7 +206,7 @@ button:hover{
    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 /* Смартфоны (Портрет и ландшафтный) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media screen and (max-width: 600px){
   
   main{
      height: inherit;
