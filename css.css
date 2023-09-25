@@ -51,7 +51,6 @@ section{
  /* Текст */
 
  p{
-   /* font-size: 15px; */
    font-family: 'Hanken Grotesk', sans-serif;
    text-align: center;
  }
@@ -204,8 +203,8 @@ div.butt.butt-end{
 div.butt.butt-end:hover{
    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-
-@media screen and (max-width: 600px){
+/* Смартфоны (Портрет и ландшафтный) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
   
   main{
      height: inherit;
@@ -240,7 +239,7 @@ div.butt.butt-end:hover{
  }
 
  .end-text{
-   padding: 0 100px 0 100px;
+   padding: 0 60px 0 60px;
    font-size: 1rem;
    color: hsl(246, 100%, 82%);
  }
